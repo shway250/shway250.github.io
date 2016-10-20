@@ -1,0 +1,153 @@
+
+body, html { 
+  font-family: Futura;
+}
+header{
+  background:rgba(0,0,0,0.8);
+  color: white;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: rgb(100,0,255);
+  background: none;
+}
+h1{
+  margin: 0 0 0 4%;
+  font-size: 45px;
+}
+
+/*ALL CANVAS STYLING*/
+#myContainer{
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
+
+/*ABOUT AND MAIN PAGE IMAGE STYLING*/
+#profile-pic{
+  display: block;
+  margin: 1% auto;
+  width: 500px;
+  height: auto;
+}
+.circleImgs{
+  border-radius: 60%;
+}
+
+/*Main text styling*/
+.text-padding{
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 2%;
+  text-align: justify;
+  margin:0 5%;
+  font-size: 25px;
+  display: inline-block;
+}
+
+#about-text{
+  font-size: 15px;
+}
+
+/*ALL CONTACT AND RESUME PAGE STYLING*/
+#contact-header{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#contact-container{
+  background: rgba(0,0,0,0.85);
+  margin: 10px auto;
+  width: 40%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+.contact-links{
+  display: inline-block;
+}
+
+#linkedInImg{
+  width: 100px;
+  height: auto;
+}
+
+#resume-container{
+  text-align: left;
+}
+
+/*ALL PORTFOLIO STYLING*/
+
+#portfolio-heading{
+  background: rgba(0,0,0,0.8);
+  color: white;
+  margin:10px 5%;
+  padding: 10px;
+}
+
+#portfolio-padding{
+  text-align: center;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-div{
+  background: rgba(0,0,0,0.4);
+  border:1px solid white;
+}
+
+.portImgs{
+  width: 250px;
+  height: auto;
+}
+
+.portDesc{
+  padding: 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+@media(max-width:750px){
+  #profile-pic{
+    width: 75%;
+    height: auto;
+  }
+
+  .text-padding{
+    text-align: left;
+    font-size: 25px;
+  }
+
+  #about-text{
+    font-size: 12px;
+  }
+
+  #contact-container{
+  margin: 10px auto;
+  width: 80%;
+  height: auto;
+  display: block;
+  text-align: center;
+  }
+
+  #contact-header{
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 5%;
+}
+
+  #resume-container{
+    font-size: 15px;
+    text-align: left;
+  }
+  #linkedInImg{
+    width: 100%;
+    height: auto;
+  }
+
+}
