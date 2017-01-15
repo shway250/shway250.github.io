@@ -1,153 +1,217 @@
+body{
+  background: black;
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+}
 
-body, html { 
-  font-family: Futura;
-}
-header{
-  background:rgba(0,0,0,0.8);
-  color: white;
-}
-a{
-  color: white;
-}
-a:hover{
-  color: rgb(100,0,255);
-  background: none;
-}
 h1{
-  margin: 0 0 0 4%;
+  font-size: 40px;
+  margin: 0;
+}
+h2{
+  font-size: 35px;
+  margin: 0;
+}
+h3{
+  font-size: 30px;
+  margin: 0;
+}
+p{
+  font-size: 25px;
+  margin: 0;
+}
+
+/* ALL FOOTER STYLING */
+footer{
+  position:fixed;
+  bottom: 0px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  background: #0b542d;
+}
+.footerList{
+  padding: 0;
+}
+.footerList li{
+  display: inline-block;
+  font-size: 1em;
+}
+.footerList li a{
+  color: rgb(225,255,225);
+  text-decoration: none;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.footerList li a:hover{
+  color: grey;
+  text-decoration: underline;
+}
+
+.container{
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* HOME PAGE STYLING */
+.homeDiv{
+  background-image: url('../imgs/yosemite.gif');
+  background-size: cover;
+
+  text-align: center;
+  color: white;
+}
+
+.name{
+  padding-top: 4.5em;
+  padding-bottom: 1em;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 45px;
 }
-
-/*ALL CANVAS STYLING*/
-#myContainer{
-  position: absolute;
-  left:0;
-  top:0;
-  z-index:-1;
+.andClass{
+  padding: .5em 0 .5em 0;
+}
+.seattleClass{
+  padding: 1em 0 6em 0;    
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
 }
 
-/*ABOUT AND MAIN PAGE IMAGE STYLING*/
-#profile-pic{
-  display: block;
-  margin: 1% auto;
-  width: 500px;
-  height: auto;
-}
-.circleImgs{
-  border-radius: 60%;
-}
-
-/*Main text styling*/
-.text-padding{
-  background: rgba(0,0,0,0.8);
+/*ABOUT STYLING*/
+.aboutDiv{
+  background: #23628c;
   color: white;
-  padding: 2%;
+}
+.aboutImg{
+  width: 430px;
+  height: 100%;
+  margin: 0 -.75em 0 .5em;
+  float: right;
+}
+.bigName{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.aboutWriting{
   text-align: justify;
-  margin:0 5%;
-  font-size: 25px;
-  display: inline-block;
+  padding-top: 1em;
 }
-
-#about-text{
-  font-size: 15px;
-}
-
-/*ALL CONTACT AND RESUME PAGE STYLING*/
-#contact-header{
+.aboutWriting ul{
   text-align: center;
-  margin-bottom: 3%;
+  padding: 1em 0 1em 0;
+  margin: 0;
+}
+.aboutWriting ul li{
+  display: inline-block;
+  padding: 0 20px 10px 20px;
+}
+.aboutWriting ul li a{
+    color: black;
 }
 
-#contact-container{
-  background: rgba(0,0,0,0.85);
-  margin: 10px auto;
-  width: 40%;
-  height: auto;
-  display: block;
+/*RESUME STYLING */
+.resumeDiv{
+  background: #a8a7a7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#a8a7a7, #8392a3, #3e4f66); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a8a7a7, #8392a3, #3e4f66); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a8a7a7, #8392a3, #3e4f66); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#a8a7a7, #8392a3, #3e4f66); /* Standard syntax */
+
   text-align: center;
 }
-
-.contact-links{
-  display: inline-block;
+.centered-text{
+  padding: 1em 0 1em 0;
 }
-
-#linkedInImg{
-  width: 100px;
-  height: auto;
+.centered-text a{
+  color: black;
 }
-
-#resume-container{
-  text-align: left;
-}
-
-/*ALL PORTFOLIO STYLING*/
-
-#portfolio-heading{
-  background: rgba(0,0,0,0.8);
+.centered-text a:hover{
   color: white;
-  margin:10px 5%;
-  padding: 10px;
+}
+.resumeImg{
+  padding: 1.5em 0 1em 0;
+}
+.resumeText{
+  padding-top: 3em;
+}
+.bottomOfResume{
+  padding-bottom: 3em;
 }
 
-#portfolio-padding{
+/*PROJECTS SECTION STYLING*/
+.projectsDiv{
+  background: #62bab1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #2f4945, #3ddbcb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2f4945, #3ddbcb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2f4945, #3ddbcb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2f4945, #3ddbcb); /* Standard syntax */
+  color: white;
+}
+.projectsHeadLine{
+  padding: 1em 0 1em 0;
   text-align: center;
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: row;
 }
-
-.portfolio-div{
-  background: rgba(0,0,0,0.4);
-  border:1px solid white;
-}
-
-.portImgs{
-  width: 250px;
+.projectsImg{
+  width: 30%;
   height: auto;
+  display: inline;
+  float: right;
 }
-
-.portDesc{
-  padding: 15px;
+.projectsImg:hover{
+  opacity: .7;
+}
+.projectsText{
+  padding: .5em 0 .5em 0;
   text-align: left;
-  font-size: 15px;
 }
-
-@media(max-width:750px){
-  #profile-pic{
-    width: 75%;
-    height: auto;
-  }
-
-  .text-padding{
-    text-align: left;
-    font-size: 25px;
-  }
-
-  #about-text{
-    font-size: 12px;
-  }
-
-  #contact-container{
-  margin: 10px auto;
-  width: 80%;
-  height: auto;
+.projectsGitLink{
+  text-align: center;
   display: block;
-  text-align: center;
-  }
-
-  #contact-header{
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 5%;
+  padding: .5em 0 1em 0;
+  color: #3ddbcb;
+  text-decoration: none;
+  font-size: 25px;
+}
+.projectsGitLink:hover{
+  color: white;
+  font-size: 26px;
+  text-decoration: underline;
+}
+.projectName{
+  text-align: left;
+  clear:right; 
+}
+.lastPTag{
+  padding-bottom: 100px;
 }
 
-  #resume-container{
-    font-size: 15px;
-    text-align: left;
-  }
-  #linkedInImg{
-    width: 100%;
-    height: auto;
-  }
-
+/*SKILLS STYLING*/
+.contactDiv{
+  background-image: url('../imgs/kinect.gif');
+  background-size: cover;
+  padding: 0 0 12em 0;
+  font-family: Tahoma, sans-serif;
+  text-align: center;
 }
+.skillsText{
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.skillCol{
+  display: inline-block;
+  background: rgba(255,255,255,0.7);
+  padding: 0 .5em 0 .5em;
+}
+
+.inlineBlock{
+  display: inline-block;
+  width: 69%;
+  padding-right: 5px;
+}
+
+
+
