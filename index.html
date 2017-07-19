@@ -1,166 +1,281 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Jackson Duhon</title>
-  <!-- Fonts links -->
-  <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600" rel="stylesheet">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="css/style-mobile.css" media="screen and (max-width:420px)">
-  <link rel="stylesheet" type="text/css" href="css/style-tablet.css" media="screen and (min-width:421px) and (max-width:720px)">
-  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width:721px)">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--   Javascript Bidness --> 
-
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Oswald:400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>  
+  <script src="libraries/p5.js" type="text/javascript"></script> <!-- P5 script -->
+  <script src="https://use.fontawesome.com/68798e7039.js"></script><!-- Font Awesome Script -->
+  <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-  <section class="homeDiv container">
-    <h2 class="name">Jackson Duhon</h2>
-    <h1>WEB DEVELOPER</h1>
-    <h3 class="andClass">and</h3>
-    <h1>DIGITAL ARTIST</h1>
-    <p class="seattleClass">Seattle, WA</p>
-  </section>
-  
-  <section class="aboutDiv container">
-    <img src="./imgs/jackson-duhon-about-pic.png" alt="This is where my face should go" class="aboutImg">
-    <div class="aboutWriting">
-      <!-- <h2>About</h2> -->
-      <p><span class="bigName">Jackson Duhon </span> is a Seattle based full-stack web developer and digital artist. Jackson grew up in Austin, TX; where the days are as long as the tacos are delicious, and Willie Nelson roams the streets singing songs about cowboys he's never met. In 2015 Jackson received a degree from the Music Technology, Interaction, Intelligence, and Design program at the California Institute of the Arts, which is where he first discovered his love of coding and being surrounded by creative weirdos. Jackson recently finished a web development immersive course at General Assembly and is looking for new opportunities in the Seattle tech sector. Jackson's a pretty cool dude, everyone says so.
-      </p>
-      <ul>
-        <li>
-          <a href="https://github.com/shway250"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="mailto:jackson_duhon@yahoo.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jackson-duhon"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-        </li>
+  <a id="linktotop"></a>
+  <div id="myContainer"></div>
+  <header>
+    <ul>
+      <li><a style="color:white;" class="white-text spaced" href="#linktotop">Home</a></li>
+      <li><a style="color:white;" class="white-text spaced" href="#linktoprojects">Projects</a></li>
+      <li><a style="color:white;" class="white-text spaced" href="./imgs/Jackson_Duhon_Technical_Resume.pdf" target="_blank">Resume</a></li>
+      <li><a style="color:white;" class="white-text spaced" href="#linktocontact">Contact</a></li>
     </ul>
+  </header>
+  <div id="titleDiv">
+    <h1 class="white-text title">Jackson Duhon</h1>
+    <h2 class="white-text title">[Web Developer]<br>and<br>[Digital Artist]</h2>
+  </div>
+  <section class="about">
+    <h1>[About Me]</h1>
+    <div id="borderbox">
+      <img id="profilepic" src="imgs/profilepic.jpg">
+    </div>
+    <article id="profiletext">
+      <p>I'm a full-stack web developer and digital artist with a background in music technology and performance. I grew up in Austin, TX; where the days are as long as the tacos are delicious, and Willie Nelson roams the streets singing songs about cowboys he's never met. Now I reside in Seattle so that I can gistare at the gum wall whenever I’m not building cool stuff with computers.</p>
+    </article>
+  </section>
+  <hr>
+  <section id="projects-section">
+    <a id="linktoprojects"></a>
+    <h1>[Projects]</h1>
+    <section id="project1">
+      <div class="project">
+        <h2>Euclid</h2>
+        <div class="project-desc">
+          <div class="image-div">
+            <a href="https://miguelapou.github.io/Euclid/" target="_blank">
+              <img class="laptop" alt="the Euclid interface" src="./imgs/euclid.png">
+            </a>
+          </div>
+        <div class="project-div">
+          <span class="important-text">Contributors:</span> 
+          Miguel Pou
+          <br><br>
+          <span class="important-text">What is it?</span> 
+          An <a href="https://en.wikipedia.org/wiki/Frequency_modulation_synthesis">FM Synthesizer</a> that allows the user to create generative compositions.
+          <br><br>
+          <span class="important-text">Technologies:</span> 
+          HTML, CSS, Javascript, Web Audio API, <a href="https://p5js.org/">P5.js</a>
+          <br><br>
+          <span class="important-text">My role:</span>
+          Sound Design, Sound Sythesis, Instrument Design.
+          <br><br>
+          <div class="fa-div">
+            <a href="https://miguelapou.github.io/Euclid/">
+              <i class="fa fa-4x fa-code" aria-hidden="true"></i>
+              <p>Live Site</p>
+            </a>
+          </div>
+          <div class="fa-div">
+            <a href="https://github.com/shway250/Euclid">
+              <i class="fa fa-4x fa-github" aria-hidden="true"></i>
+              <p>Github Repo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project5">
+      <div class="project">
+        <h2>Cal Pal</h2>
+        <div class="project-desc2">
+          <div class="image-div">
+            <a href="http://bestuxdesignerever.com/cs_calpal.html" target="_blank">
+              <img class="laptop" alt="Cal Pal Icon" src="./imgs/cp_casestudy.png">
+            </a>
+          </div>
+          <div class="project-div">
+            <span class="important-text">Contributors:</span> 
+            Annelisse Smith, Reno McKenzie
+            <br><br>
+            <span class="important-text">What is it?</span> 
+            A deployed Alexa app that helps you make good nutritional decisions. <br>Won first place in the General Assembly Amazon Alexa Hackathon.
+            <br><br>
+            <span class="important-text">Technologies:</span> 
+            Node.js, AWS
+            <br><br>
+            <span class="important-text">My role:</span>
+            Backend developement, Natural Language Processing
+            <br><br>
+            <div class="fa-div">
+              <a href="http://bestuxdesignerever.com/cs_calpal.html">
+                <i class="fa fa-4x fa-code" aria-hidden="true"></i>
+                <p>Live Site</p>
+              </a>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="project2">
+      <div class="project">
+        <h2>Artemis</h2>
+        <div class="project-desc">
+          <div class="image-div">
+            <a href="http://artemistracker.herokuapp.com/" target="_blank">
+              <img class="laptop" alt="Artemis Front Page" src="./imgs/artemis.png">
+            </a>
+          </div>
+        <div class="project-div">
+          <span class="important-text">Contributors:</span> 
+          Miguel Pou, Leo Burke, Kemal Degar
+          <br><br>
+          <span class="important-text">What is it?</span> 
+          A full stack web application that helps you keep track of job applications. <br>Won first place in the General Assembly 24 Hour MEAN stack Hackathon
+          <br><br>
+          <span class="important-text">Technologies:</span> 
+          MongoDB, Angular, Express, Node.js
+          <br><br>
+          <span class="important-text">My role:</span>
+          Authentication, Authorization, Models, Controllers, Deployment.
+          <br><br>
+          <div class="fa-div">
+            <a href="http://artemistracker.herokuapp.com/">
+              <i class="fa fa-4x fa-code" aria-hidden="true"></i>
+              <p>Live Site</p>
+            </a>
+          </div>
+          <div class="fa-div">
+            <a href="https://github.com/shway250/artemis">
+              <i class="fa fa-4x fa-github" aria-hidden="true"></i>
+              <p>Github Repo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project3">
+      <div class="project">
+        <h2>Accio-Bike</h2>
+        <div class="project-desc">
+          <div class="image-div">
+            <a href="https://accio-bike.herokuapp.com/" target="_blank">
+              <img class="laptop" alt="Accio-Bike SVG animation" src="./imgs/accio-bike.png">
+            </a>
+          </div>
+        <div class="project-div">
+          <span class="important-text">Contributors:</span> 
+          Zoe, Kemal, Chris
+          <br><br>
+          <span class="important-text">What is it?</span> 
+          A full stack web application for storing information about your bike <br>and web crawling through Craigslist to help find it if it is stolen.
+          <br><br>
+          <span class="important-text">Technologies:</span> 
+          Ruby on Rails, PostgreSQL, Nokogiri
+          <br><br>
+          <span class="important-text">My role:</span>
+          Authentication, Authorization, Models, Web Scraping.
+          <br><br>
+          <div class="fa-div">
+            <a href="https://accio-bike.herokuapp.com/">
+              <i class="fa fa-4x fa-code" aria-hidden="true"></i>
+              <p>Live Site</p>
+            </a>
+          </div>
+          <div class="fa-div">
+            <a href="https://github.com/shway250/acciobike2">
+              <i class="fa fa-4x fa-github" aria-hidden="true"></i>
+              <p>Github Repo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project4">
+      <div class="project">
+        <h2>Code Pen</h2>
+        <div class="project-desc">
+          <div class="image-div">
+            <a href="https://codepen.io/shway250/" target="_blank">
+              <img class="laptop" alt="I ain't got no face" src="./imgs/headless-profile-pic.png">
+            </a>
+          </div>
+        <div class="project-div">
+          <span class="important-text">What is it?</span> 
+          This is my Code Pen. It's where I doodle out ideas and keep some of my animations.
+          <br><br>
+          <span class="important-text">Technologies:</span> 
+          I mostly do canvas animations in Code Pen.
+          <br><br>
+          <br><br>
+          <div class="fa-div">
+            <a href="https://codepen.io/shway250/">
+              <i class="fa fa-4x fa-codepen" aria-hidden="true"></i>
+              <p>Codepen Profile</p>
+            </a>
+          </div> 
+        </div>
+      </div>
+    </section>
+  </section>
+  <hr>
+  <section id="skillz-section">
+    <h1>[Skills]</h1>
+    <div class="skillz-div circle">
+      <span class="important-text list-text">Front End</span> 
+          <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Angular</li>
+            <li>React</li>
+          </ul>
+    </div>
+    <div class="skillz-div circle">
+      <span class="important-text list-text">Back End</span> 
+          <ul class="skills-list">
+            <li>NodeJS</li>
+            <li>Ruby on Rails</li>
+            <li>Meteor</li>
+            <li>PostgresQL</li>
+            <li>Active Record</li>
+            <li>MongoDB</li>
+          </ul>
+    </div>
+    <div class="skillz-div circle">
+      <span class="important-text list-text">Misc</span> 
+          <ul class="skills-list">
+            <li>AJAX</li>
+            <li>RESTful APIs</li>
+            <li>Web Scraping</li>
+            <li>Audio Engineering</li>
+            <li>Sound Synthesis</li>
+            <li>P5.js</li>
+          </ul>
     </div>
   </section>
-
-  <section class="resumeDiv container">
-    <a id="resume_link"></a>
-    <h2 class="resumeText">Resume</h2>
-    <div class="centered-text">
-      <a href="imgs/jackson-duhon-resume.pdf" download><i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i></a>
-      <p>Download PDF Version</p>
-
-      <div class="resumeImg">
-        <a href="imgs/jackson-duhon-text-resume.rtf" download><i class="fa fa-file-text fa-4x" aria-hidden="true"></i></a>
-        <p>Download Text Version</p>
-      </div>
-      <div>
-        <a href="https://gist.github.com/shway250/a1694a78fc2926c0ab41dfb55efe17eb"><i class="fa fa-link fa-4x" aria-hidden="true"></i>
+  <hr>
+  <section>
+    <h1>[Contact]</h1>
+    <a id="linktocontact"></a>
+    <div class="contact-div">
+      <div class="fa-div">
+        <a href="https://github.com/shway250"><i class="fa fa-5x fa-github-square contact-link" aria-hidden="true"></i>
+          <p>Github</p>
         </a>
-        <p class="bottomOfResume">Link to Markdown Version</p>
       </div>
-    </div>
-  </section>
-
-  <section class="projectsDiv container">
-    <h1 class="projectsHeadLine">Projects</h2>
-
-    <h2 class="projectName">Euclid</h2>
-    <div class="inlineBlock">
-      <p class="projectsText">A front end FM Synthesizer. Allows the user to create generative compositions using just the browser.</p> 
-      <p class="projectsText"><strong>Role:</strong> Sound Design, Sound Sythesis, Front End Design</p>
-      <p class="projectsText"><strong>Technologies used:</strong> HTML, CSS, Javascript, Canvas, P5.js.</p>
-    </div>
-    <a href="https://miguelapou.github.io/Euclid/">
-      <img src="./imgs/euclid.png" alt="The euclid interface" class="projectsImg">
-    </a>
-    <a class="projectsGitLink" href="https://github.com/shway250/Euclid">View on Github</a>
-    <p class="lastPTag"> </p>
-    <br>
-
-    <h2 class="projectName">Artemis</h2>
-    <div class="inlineBlock">
-      <p class="projectsText">A full stack web application that helps you keep track of all the applications you’re sending during a job search. Won first place in the GA MEAN stack Hackathon</p> 
-      <p class="projectsText"><strong>Role:</strong> Authentication, authorization, databases, deployment.</p>
-      <p class="projectsText"><strong>Technologies used:</strong> MongoDb, Express, Angular.js, Node.js.</p>
-    </div>
-    <a href="http://artemistracker.herokuapp.com/">
-      <img src="./imgs/artemis.png" alt="The Artemis front page" class="projectsImg">
-    </a>
-    <a class="projectsGitLink" href="https://github.com/shway250/artemis">View on Github</a>
-    <p class="lastPTag"> </p>
-    <br>
-
-    <h2 class="projectName">Accio Bike</h2>
-    <div class="inlineBlock">
-      <p class="projectsText">A full stack web application for storing information about your bike and web crawling through Craigslist to help find it if it is stolen.</p>  
-      <p class="projectsText"><strong>Role:</strong> Authentication, authorization, databases, deployment.
-      <p class="projectsText"><strong>Technologies used:</strong> HTML, CSS, Javascritp, Ruby on Rails, NokoGiri.</p>
-    </div>
-    <a href="https://accio-bike.herokuapp.com/">
-      <img src="./imgs/accio-bike.png" alt="The accio-bike home page" class="projectsImg">
-    </a>
-    <a class="projectsGitLink" href="https://github.com/shway250/acciobike2">View on Github</a>
-    <p class="lastPTag"> </p>
-    <br>
-
-    <h2 class="projectName">Wubba Lubba Four Square</h2>
-    <div class="inlineBlock">
-      <p class="projectsText">A front end Connect Four game based off the cartoon "Rick and Morty".</p> 
-      <p class="projectsText"><strong>Technologies used:</strong> HTML, CSS, Javascript, jQuery</p>
-    </div>
-    <a href="https://shway250.github.io/Rick-Morty-Four-Square/">
-      <img src="./imgs/wubba-lubba.png" alt="The wubba lubba 4 square game board" class="projectsImg">
-    </a>
-    <a class="projectsGitLink" href="https://github.com/shway250/Rick-Morty-Four-Square">View on Github</a>
-    <p class="lastPTag"> </p>
-    <p class="lastPTag"> </p>
-  </section>
-
-  <section class="contactDiv container">
-    <div class="skillsDiv">
-      <h2 class="skillsText">Skills</h2>
-       <div class="skillCol">
-        <i class="fa fa-language fa-3x" aria-hidden="true"></i>
-        <br>
-        <p><strong>Languages</strong></p>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>Javascript</p>
-        <p>Ruby</p>
+      <div class="fa-div">
+        <a href="jackson_duhon@yahoo.com"><i class="fa fa-5x fa-envelope contact-link" aria-hidden="true"></i>
+          <p>Email</p>
+        </a>
       </div>
-
-      <div class="skillCol">
-        <i class="fa fa-code fa-3x" aria-hidden="true"></i>
-        <br>
-        <p><strong>Libraries</strong></p>
-        <p>Node.js</p>
-        <p>Angular</p>
-        <p>Meteor</p>
-        <p>P5.js</p>
+      <div class="fa-div">
+        <a href="./imgs/Jackson_Duhon_Technical_Resume.pdf" target="_blank"><i class="fa fa-5x fa-file-text contact-link" aria-hidden="true"></i>
+          <p>Resume</p>
+        </a>
       </div>
-
-      <div class="skillCol">
-        <i class="fa fa-database fa-3x" aria-hidden="true"></i>
-        <br>
-        <p><strong>Databases</strong></p>
-        <p>SQL</p>
-        <p>MongoDB</p>
-        <p>PostgreSQL</p>
-        <p>Mongoose</p>
+      <div class="fa-div">
+        <a href="https://www.linkedin.com/in/jackson-duhon/"><i class="fa fa-5x fa-linkedin-square contact-link" aria-hidden="true"></i>
+          <p>LinkedIn</p>
+        </a>
       </div>  
     </div>
   </section>
-
-
   <footer>
-    <ul class="footerList">
-      <li><a href="#resume_link">Resume</a></li>
-      <li><a href="https://www.linkedin.com/in/jackson-duhon">LinkedIn</a></li>
-      <li><a href="mailto:jackson_duhon@yahoo.com">Email</a></li>
-      <li><a href="https://github.com/shway250">Github</a></li>
+    <ul>
+      <li>&copy; 2017 Jackson Duhon. All rights reserved.</li>
     </ul>
   </footer>
-
+  <script src="scrollscript.js" type="text/javascript"></script>
 </body>
 </html>
